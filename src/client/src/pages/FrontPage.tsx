@@ -1,10 +1,14 @@
-
+import FrontPageHeader from "../components/FrontPageHeader";
+import PageTitle from "../components/PageName";
+import PageSelector from "../components/PageSelector";
 
 const FrontPage = () => {
-  return (<>
-    <h1 className="text-3xl font-bold underline text-center">Hello world!</h1>
+  return (<div className="front-page">
 
-  </>);
+    <PageTitle pageTitle="Front Page" />
+    <FrontPageHeader />
+    <PageSelector />
+  </div>);
 }
 
 export default FrontPage;
