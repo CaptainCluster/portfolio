@@ -1,11 +1,13 @@
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import FrontPage from './pages/FrontPage' 
-import Skills from './pages/Skills'
-import Projects from './pages/Projects'
-import Error404 from './pages/Error404'
 
-function App() {
+// Page imports 
+import FrontPage  from './pages/FrontPage' 
+import Skills     from './pages/Skills'
+import Projects   from './pages/Projects'
+import Error404   from './pages/Error404'
+
+const App = () => {
   return (
     <Router>
       <Routes>
