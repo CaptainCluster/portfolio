@@ -1,5 +1,5 @@
 export default interface AboutMeInterface {
-  header: string;
+  header:   string;
   textBody: string[];
 }
 
