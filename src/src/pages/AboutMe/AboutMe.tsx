@@ -1,13 +1,19 @@
 import React from "react";
 import PageTitle from "../../components/PageName";
-import {studies_1, studies_2} from "../../data/aboutMe";
+import AboutSection from "./AboutSection";
+import { aboutMeData } from "../../data/aboutMe";
+import AboutMeInterface from "../../interfaces/AboutMeInterface";
 
 const AboutMe: React.FC = () => {
+  
+  const generateAboutSection = ({header, textBody}: AboutMeInterface) => {
+    return <AboutSection header={header} textBody={textBody}/> 
+  }
+
   return (
     <div className="about-me fade-in">
       <PageTitle pageTitle="About Me" />
-      <p>{studies_1}</p>
-      <p>{studies_2}</p>
+      {aboutMeData.map(aboutMeEntry => generateAboutSection(aboutMeEntry))}
     </div>
   )
 }
