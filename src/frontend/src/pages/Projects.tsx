@@ -5,7 +5,7 @@ PageTitle
 const Projects = () => {
 
   return(
-    <div className="projects-page">
+    <div className="projects-page fade-in">
       <PageTitle pageTitle="Projects"/>
     </div>
   )
