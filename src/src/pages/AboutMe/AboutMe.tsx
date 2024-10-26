@@ -11,10 +11,11 @@ const AboutMe: React.FC = () => {
   }
 
   return (
-    <div className="about-me bg-gray-100">
+    <div className="about-me bg-gray-100 h-screen overflow-scroll">
       <PageTitle pageTitle="About Me" />
-      <div className="flex items-center justify-center h-screen fade-in">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-6">
+
+      <div className="items-center mb-2 justify-center h-screen fade-in">
+        <div className="grid grid-cols-1 gap-10 p-10 max-w-7xl mx-auto">
           {aboutMeData.map(aboutMeEntry => generateAboutSection(aboutMeEntry))}
         </div>
       </div>

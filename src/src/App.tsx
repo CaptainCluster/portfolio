@@ -5,7 +5,7 @@ import FrontPage  from './pages/FrontPage/FrontPage'
 import Skills     from './pages/Skills'
 import Projects   from './pages/Projects'
 import Error404   from './pages/Error404'
-import AboutMe from './pages/AboutMe/AboutMe'
+import AboutMe    from './pages/AboutMe/AboutMe'
 
 const App = () => {
   return (
