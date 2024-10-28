@@ -1,4 +1,4 @@
-import React from "react";
+import React            from "react";
 import FrontPageHeader  from "./FrontPageHeader";
 import PageTitle        from "../../components/PageName";
 import PageSelector     from "../../components/PageSelect/PageSelector";

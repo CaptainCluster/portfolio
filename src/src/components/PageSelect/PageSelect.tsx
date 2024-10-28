@@ -1,4 +1,4 @@
-import PageSelectInterface from "../../interfaces/PageSelectInterface";
+import PageSelectInterface from "../../models/interfaces/PageSelectInterface";
 
 const PageSelect = ({pageTitle, pageBio, pageUrl}: PageSelectInterface) => {
   

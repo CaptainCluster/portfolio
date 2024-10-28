@@ -1,4 +1,4 @@
-import AboutMeInterface from "../interfaces/AboutMeInterface";
+import AboutMeInterface from "../models/interfaces/AboutMeInterface";
 
 export const aboutMeData: AboutMeInterface[] = [
   {

@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // Page imports 
 import FrontPage  from './pages/FrontPage/FrontPage' 
-import Skills     from './pages/Skills'
-import Projects   from './pages/Projects'
+import Skills     from './pages/Skills/Skills'
+import Projects   from './pages/Projects/Projects'
 import Error404   from './pages/Error404'
 import AboutMe    from './pages/AboutMe/AboutMe'
 

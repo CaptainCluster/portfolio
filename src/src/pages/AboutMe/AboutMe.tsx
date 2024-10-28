@@ -1,8 +1,8 @@
-import React from "react";
-import PageTitle from "../../components/PageName";
-import AboutSection from "./AboutSection";
-import { aboutMeData } from "../../data/aboutMe";
-import AboutMeInterface from "../../interfaces/AboutMeInterface";
+import React            from "react";
+import PageTitle        from "../../components/PageName";
+import AboutSection     from "./AboutSection";
+import { aboutMeData }  from "../../data/aboutMe";
+import AboutMeInterface from "../../models/interfaces/AboutMeInterface";
 
 const AboutMe: React.FC = () => {
   

@@ -1,4 +1,4 @@
-import AboutMeInterface from "../../interfaces/AboutMeInterface"; 
+import AboutMeInterface from "../../models/interfaces/AboutMeInterface"; 
 
 const AboutSection = ({ header, textBody }: AboutMeInterface) => {
 

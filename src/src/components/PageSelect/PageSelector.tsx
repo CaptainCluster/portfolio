@@ -1,5 +1,5 @@
 import PageSelect from "./PageSelect";
-import PageSelectInterface from "../../interfaces/PageSelectInterface";
+import PageSelectInterface from "../../models/interfaces/PageSelectInterface";
 
 import { selectablePages } from "../../data/pageSelect";
 
