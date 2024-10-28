@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import PageTitle      from "../../components/PageName";
-import { skillsData } from "../../data/skills";
-import SkillArea      from "./SkillArea";
+
+import { skillsData }     from "../../data/skills";
+import SkillArea          from "./SkillArea";
+import BackButton         from "../../components/BackButton";
 import SkillAreaInterface from "../../models/interfaces/SkillArea";
 
 const Skills: React.FC = () => {
@@ -38,9 +39,9 @@ const Skills: React.FC = () => {
 
   return (
     <div className="skills-page fade-in">
-      <PageTitle pageTitle="Skills" />
-      <div className="flex justify-center items-center h-screen">
-        <div className="grid grid-cols-1 gap-10 p-10">
+      <BackButton />
+      <div className="justify-center items-center h-screen">
+        <div className="grid grid-cols-1 gap-10">
           {skills.map((skill) => (
             <SkillArea area={skill.area} skills={skill.skills}/>  
           ))}

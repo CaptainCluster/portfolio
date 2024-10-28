@@ -1,4 +1,7 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+/**
+ * Using HashRouter so that the GitHub pages deployment works as intended
+ */
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 
 // Page imports 
 import FrontPage  from './pages/FrontPage/FrontPage' 

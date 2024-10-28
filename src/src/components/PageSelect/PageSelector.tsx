@@ -21,7 +21,7 @@ const createSelectablePage = ({pageTitle, pageBio, pageUrl}: PageSelectInterface
  */
 const PageSelector = () => {
   return(
-    <div className="flex items-center justify-center h-screen bg-gray-100 fade-in-component">
+    <div className="grid items-center justify-center h-screen bg-gray-100 fade-in-component">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
         {selectablePages.length === 0 
           ? <p>No pages available</p>
