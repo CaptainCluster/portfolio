@@ -37,10 +37,10 @@ const Skills: React.FC = () => {
   }, [areas]);
 
   return (
-    <div className="skills-page fade-in">
+    <div className="h-screen skills-page fade-in bg-gray-100 overflow-scroll">
       <PageTitle pageTitle="Skills" />
-      <div className="flex justify-center items-center h-screen">
-        <div className="grid grid-cols-1 gap-10 p-10">
+      <div className="items-center h-screen">
+        <div className="grid grid-cols-1 gap-10 mt-10">
           {skills.map((skill) => (
             <SkillArea area={skill.area} skills={skill.skills}/>  
           ))}

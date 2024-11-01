@@ -1,13 +1,23 @@
 import PageTitle from "../../components/PageName";
-
-PageTitle
+import { projectsData } from "../../data/projects";
+import ProjectEntry from "./ProjectEntry";
 
 const Projects = () => {
 
   return(
-    <div className="projects-page fade-in">
+    <div className="projects-page h-screen bg-gray-100 fade-in overflow-scroll">
       <PageTitle pageTitle="Projects"/>
-      <h1 className="flex justify-center items-center h-screen fade-in">Coming Soon</h1>
+      <div>
+        {projectsData.map((projectEntry) => (
+          <ProjectEntry 
+            name={projectEntry.name} 
+            images={projectEntry.images} 
+            technologies={projectEntry.technologies}
+            status={projectEntry.status}
+            description={projectEntry.description}
+            />
+        ))}
+      </div>
     </div>
   )
 }
