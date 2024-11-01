@@ -3,7 +3,6 @@ import { projectsData } from "../../data/projects";
 import ProjectEntry from "./ProjectEntry";
 
 const Projects = () => {
-
   return(
     <div className="projects-page h-screen bg-gray-100 fade-in overflow-scroll">
       <PageTitle pageTitle="Projects"/>

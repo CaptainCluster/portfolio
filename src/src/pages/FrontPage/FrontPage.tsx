@@ -4,7 +4,7 @@ import PageSelector     from "../../components/PageSelect/PageSelector";
 
 const FrontPage: React.FC = () => {
   return (
-    <div className="front-page fade-in bg-gray-100 overflow-scroll">
+    <div className="front-page h-screen overflow-scroll fade-in bg-gray-100">
       <FrontPageHeader />
       <PageSelector />
     </div>

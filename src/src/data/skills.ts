@@ -106,6 +106,20 @@ export const skillsData: SkillInterface[] = [
     "type":         "Programming Language",
     "areas":        ["General"],
     "proficiency":  2
+  },
+
+  // Other
+  {
+    "name":         "Docker",
+    "type":         "Containerization",
+    "areas":        ["Other"],
+    "proficiency":  3
+  },
+  {
+    "name":         "Git",
+    "type":         "Version Control",
+    "areas":        ["Other"],
+    "proficiency":  4
   }
 ]
 

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import PageTitle      from "../../components/PageName";
-import { skillsData } from "../../data/skills";
-import SkillArea      from "./SkillArea";
+
+import { skillsData }     from "../../data/skills";
+import SkillArea          from "./SkillArea";
 import SkillAreaInterface from "../../models/interfaces/SkillArea";
+import PageTitle from "../../components/PageName";
 
 const Skills: React.FC = () => {
   const [areas, setAreas]   = useState<string[]>([]);
