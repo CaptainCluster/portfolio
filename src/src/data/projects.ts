@@ -13,6 +13,7 @@
 import ProjectsInterface from "../models/interfaces/ProjectsInterface";
 
 export const projectsData: ProjectsInterface[] = [
+  /*
   {
     "name":         "FollowTracker",
     "images":       [],
@@ -24,5 +25,28 @@ export const projectsData: ProjectsInterface[] = [
       file. The program is capable of archiving data and comparing the two most recent
       entries.
     `
-  }
+  },
+  */
+  {
+    "name":         "Haalarilanit Website",
+    "images":       [
+      {
+        "src":  "project_haalarilanit.png",
+        "alt":  "Haalarilanit website image"
+      },
+    ],
+    "technologies": ["JavaScript, HTML, CSS"],
+    "status":       "Finished",
+    "year":         2024,
+    "description":  [
+      `
+        Haalarilanit website provides information for people who want to participate 
+        in the Haalarilanit event. The event is one of the largest, if not the largest, 
+        LAN party event hosted by Ruut Ry. Building it into something the association,
+        and other Haalarilanit organizers, are happy with required both good
+        communication and meeting deadlines. I also provided constant updates to the 
+        site, even after the event was revealed, based on the wishes of the organizers.
+      `
+    ]
+  },
 ] 

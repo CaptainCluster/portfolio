@@ -17,7 +17,6 @@ const Skills: React.FC = () => {
       });
     });
     setAreas(Array.from(uniqueAreas));
-    
   }, []);
 
   useEffect(() => {
