@@ -1,6 +1,15 @@
 import ProjectEntryInterface from "../../models/interfaces/ProjectEntryInterface";
+import { useState, useEffect } from "react";
 
-const ProjectEntry = ({ name, images, technologies, status, description }: ProjectEntryInterface) => {
+const ProjectEntry = ({ name, images, technologies, status, description, links }: ProjectEntryInterface) => {
+
+  const [linksSectionTitle, setLinksSectionTitle] = useState<string>("");
+
+  useEffect(() => {
+    if (links.length > 0) {
+      setLinksSectionTitle("Links");
+    }
+  }, []);
 
   const imgDirectory: string = "../src/assets/"
 
@@ -15,6 +24,10 @@ const ProjectEntry = ({ name, images, technologies, status, description }: Proje
         <div className="p-3">
           <h2 className="text-xl">Status</h2>
           <p>{status}</p>
+        </div>
+        <div>
+          <h2 className="text-xl">{linksSectionTitle}</h2>
+          {links.map((link) => (<a className="text-blue-500" href={link}>{link}</a>))}
         </div>
       </div>
       <div>

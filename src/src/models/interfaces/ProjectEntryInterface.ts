@@ -6,4 +6,5 @@ export default interface ProjectEntryInterface {
   technologies: string[];
   status:       string;
   description:  string[];
+  links:        string[];
 }

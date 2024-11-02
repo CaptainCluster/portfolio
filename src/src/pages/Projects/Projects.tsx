@@ -53,6 +53,7 @@ const Projects = () => {
                   technologies={projectEntry.technologies}
                   status={projectEntry.status}
                   description={projectEntry.description}
+                  links={projectEntry.links}
                 />
               ))}
             </>

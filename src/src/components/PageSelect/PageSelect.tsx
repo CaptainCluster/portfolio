@@ -8,7 +8,7 @@ const PageSelect = ({pageTitle, pageBio, pageUrl}: PageSelectInterface) => {
   }
 
   return(
-    <div className="page-select p-8 bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 text-center" onClick={handleClick}>
+    <div className="cursor-pointer page-select p-8 bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105 text-center" onClick={handleClick}>
       <h2 className="text-2xl font-bold mb-4">{pageTitle}</h2>
       <span className="font-serif text-gray-700">{pageBio}</span>
     </div>

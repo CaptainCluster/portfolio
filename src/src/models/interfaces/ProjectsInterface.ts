@@ -7,4 +7,5 @@ export default interface ProjectsInterface {
   status:       string;
   year:         number;
   description:  string[];
+  links:        string[];
 }
