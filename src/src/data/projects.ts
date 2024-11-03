@@ -17,7 +17,7 @@ export const projectsData: ProjectsInterface[] = [
     "name":         "FollowTracker",
     "images":       [],
     "technologies": ["Python"],
-    "status":       "Being Fixed",
+    "status":       "Finished",
     "year":         2023,
     "description":  [
       `
