@@ -25,6 +25,11 @@ export const projectsData: ProjectsInterface[] = [
         The scraped data, consisting only of public information, is written in a .xlsx 
         file. The program is capable of archiving data and comparing the two most recent
         entries.
+      `,
+      `
+        While the project was heavily worked on during 2023, it got some necessary fixes 
+        in 2024. Critical errors that made it unusable for some were fixed and the way 
+        the data is acquired was perfected.
       `
     ],
     "links":        ["https://github.com/captaincluster/FollowTracker"]      
