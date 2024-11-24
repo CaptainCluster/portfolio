@@ -28,7 +28,12 @@ const Skills: React.FC = () => {
       }
       skillsData.forEach(skill => {
         if (skill.areas.includes(area)) {
-          skillDisplayEntry.skills.push(skill.name); 
+          skillDisplayEntry.skills.push({
+            name:         skill.name,
+            type:         skill.type,
+            areas:        skill.areas,
+            proficiency:  skill.proficiency
+          }); 
         }
       });
       uniqueSkills.add(skillDisplayEntry)
@@ -40,7 +45,7 @@ const Skills: React.FC = () => {
     <div className="h-screen skills-page fade-in bg-gray-100 overflow-scroll">
       <PageTitle pageTitle="Skills" />
       <div className="items-center h-screen">
-        <div className="grid grid-cols-1 gap-10 mt-10">
+        <div className="grid gap-10 mt-10">
           {skills.map((skill) => (
             <SkillArea area={skill.area} skills={skill.skills}/>  
           ))}

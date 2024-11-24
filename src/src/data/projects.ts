@@ -14,25 +14,20 @@ import ProjectsInterface from "../models/interfaces/ProjectsInterface";
 
 export const projectsData: ProjectsInterface[] = [
   {
-    "name":         "FollowTracker",
-    "images":       [],
-    "technologies": ["Python"],
-    "status":       "Finished",
-    "year":         2023,
-    "description":  [
+    "name":           "Bachelor's Thesis Technical Work",
+    "images":         [],
+    "technologies":   [],
+    "status":         "Finished",
+    "year":           2024,
+    "description":    [
       `
-        FollowTracker is a tool that allows a user to document their GitHub followership.
-        The scraped data, consisting only of public information, is written in a .xlsx 
-        file. The program is capable of archiving data and comparing the two most recent
-        entries.
+        To be announced.
       `,
       `
-        While the project was heavily worked on during 2023, it got some necessary fixes 
-        in 2024. Critical errors that made it unusable for some were fixed and the way 
-        the data is acquired was perfected.
+        Note! Due to the intended usage of the work, the source code is proprietary.
       `
     ],
-    "links":        ["https://github.com/captaincluster/FollowTracker"]      
+    "links":          []
   },
   {
     "name":         "Haalarilanit Website",
@@ -56,5 +51,26 @@ export const projectsData: ProjectsInterface[] = [
       `
     ],
     "links":        []
+  },
+  {
+    "name":         "FollowTracker",
+    "images":       [],
+    "technologies": ["Python"],
+    "status":       "Finished",
+    "year":         2023,
+    "description":  [
+      `
+        FollowTracker is a tool that allows a user to document their GitHub followership.
+        The scraped data, consisting only of public information, is written in a .xlsx 
+        file. The program is capable of archiving data and comparing the two most recent
+        entries.
+      `,
+      `
+        While the project was heavily worked on during 2023, it got some necessary fixes 
+        in 2024. Critical errors that made it unusable for some were fixed and the way 
+        the data is acquired was perfected.
+      `
+    ],
+    "links":        ["https://github.com/captaincluster/FollowTracker"]      
   },
 ] 

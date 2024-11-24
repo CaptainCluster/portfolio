@@ -6,20 +6,20 @@ export const skillsData: SkillInterface[] = [
   {
     "name":         "JavaScript",
     "type":         "Programming Language",
-    "areas":        ["Front-End", "Back-End"],
-    "proficiency":  5
+    "areas":        ["Front-End"],
+    "proficiency":  10
   },
   {
     "name":         "TypeScript",
     "type":         "Programming Language",
-    "areas":        ["Front-End", "Back-End"],
-    "proficiency":  5
+    "areas":        ["Front-End"],
+    "proficiency":  10
   },
   {
     "name":         "Java",
     "type":         "Programming Language",
     "areas":        ["Back-End"],
-    "proficiency":  4
+    "proficiency":  8
   },
 
   // Web Development - Front-End
@@ -27,25 +27,25 @@ export const skillsData: SkillInterface[] = [
     "name":         "React (TS & JS)",
     "type":         "Framework",
     "areas":        ["Front-End"],
-    "proficiency":  4
+    "proficiency":  8
   },
   {
     "name":         "HTML",
     "type":         "Basic Web",
     "areas":        ["Front-End"],
-    "proficiency":  5
+    "proficiency":  10
   },
   {
     "name":         "CSS",
     "type":         "Web Styling",
     "areas":        ["Front-End"],
-    "proficiency":  4
+    "proficiency":  8
   },
   {
     "name":         "Sass",
     "type":         "Web Styling",
     "areas":        ["Front-End"],
-    "proficiency":  3
+    "proficiency":  7
   },
 
   // Web Development - Back-End
@@ -53,13 +53,13 @@ export const skillsData: SkillInterface[] = [
     "name":         "Express (TS & JS)",
     "type":         "Framework",
     "areas":        ["Back-End"],
-    "proficiency":  4
+    "proficiency":  8
   },
   {
     "name":         "Spring Boot (Java)",
     "type":         "Framework",
     "areas":        ["Back-End"],
-    "proficiency":  3
+    "proficiency":  7
   },
 
   // Database Management
@@ -67,19 +67,19 @@ export const skillsData: SkillInterface[] = [
     "name":         "PostgreSQL",
     "type":         "Database Management System",
     "areas":        ["Database"],
-    "proficiency":  4
+    "proficiency":  8
   },
   {
     "name":         "SQLite",
     "type":         "Database Management System",
     "areas":        ["Database"],
-    "proficiency":  4
+    "proficiency":  8
   },
   {
     "name":         "MongoDB",
     "type":         "Database Management System",
     "areas":        ["Database"],
-    "proficiency":  4
+    "proficiency":  8
   },
 
   // General Purpose
@@ -87,25 +87,25 @@ export const skillsData: SkillInterface[] = [
     "name":         "Python",
     "type":         "Programming Language",
     "areas":        ["General"],
-    "proficiency":  5
+    "proficiency":  10
   },
   {
     "name":         "Rust",
     "type":         "Programming Language",
     "areas":        ["General"],
-    "proficiency":  2
+    "proficiency":  7
   },
   {
     "name":         "C",
     "type":         "Programming Language",
     "areas":        ["General"],
-    "proficiency":  2
+    "proficiency":  4
   },
   {
     "name":         "C++",
     "type":         "Programming Language",
     "areas":        ["General"],
-    "proficiency":  2
+    "proficiency":  4
   },
 
   // Other
@@ -113,13 +113,13 @@ export const skillsData: SkillInterface[] = [
     "name":         "Docker",
     "type":         "Containerization",
     "areas":        ["Other"],
-    "proficiency":  3
+    "proficiency":  7
   },
   {
     "name":         "Git",
     "type":         "Version Control",
     "areas":        ["Other"],
-    "proficiency":  4
+    "proficiency":  9
   }
 ]
 
