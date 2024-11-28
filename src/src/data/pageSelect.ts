@@ -15,5 +15,10 @@ export const selectablePages: PageSelectInterface[] = [
     pageTitle:  "Skills",
     pageBio:    "Here are some of my software engineering skills.",
     pageUrl:    "#skills"
+  },
+  {
+    pageTitle:  "Experience",
+    pageBio:    "Relevant practical experience I have.",
+    pageUrl:    "#experience"
   }
 ] 
