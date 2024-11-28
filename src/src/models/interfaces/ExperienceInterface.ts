@@ -4,4 +4,5 @@ export default interface ExperienceInterface {
   endDate:      Date;
   keySkills:    string[];
   description:  string;
+  images:       string[];
 }
