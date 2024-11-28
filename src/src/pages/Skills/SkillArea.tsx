@@ -1,5 +1,5 @@
 import SkillAreaInterface from "../../models/interfaces/SkillArea";
-import IndividualSkill from "./IndividualSkill";
+import IndividualSkill    from "./IndividualSkill";
 
 const SkillArea = ({area, skills}: SkillAreaInterface) => {
     

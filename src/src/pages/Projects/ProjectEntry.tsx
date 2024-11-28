@@ -1,5 +1,5 @@
-import ProjectEntryInterface from "../../models/interfaces/ProjectEntryInterface";
-import { useState, useEffect } from "react";
+import ProjectEntryInterface    from "../../models/interfaces/ProjectEntryInterface";
+import { useState, useEffect }  from "react";
 
 const ProjectEntry = ({ name, images, technologies, status, description, links }: ProjectEntryInterface) => {
 
