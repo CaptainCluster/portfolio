@@ -10,8 +10,8 @@ import { selectablePages } from "../../data/pageSelect";
  * pageTitle: the title of the page 
  * pageBio:   the bio of the page
  */ 
-const createSelectablePage = ({pageTitle, pageBio, pageUrl}: PageSelectInterface) => {
-  return <PageSelect pageTitle={pageTitle} pageBio={pageBio} pageUrl={pageUrl}/>
+const createSelectablePage = ({pageTitle, pageBio, pageUrl}: PageSelectInterface, index: number) => {
+  return <PageSelect key={index} pageTitle={pageTitle} pageBio={pageBio} pageUrl={pageUrl}/>
 }
 
 /**
@@ -25,7 +25,7 @@ const PageSelector = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
         {selectablePages.length === 0 
           ? <p>No pages available</p>
-          : selectablePages.map(selectablePage => createSelectablePage(selectablePage))
+          : selectablePages.map((selectablePage, index) => createSelectablePage(selectablePage, index))
         }
       </div>
     </div>
