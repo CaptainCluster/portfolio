@@ -1,23 +1,13 @@
-import { useEffect, useState } from "react";
-import ExperienceInterface from "../../models/interfaces/ExperienceInterface";
-
+import { useEffect, useState }      from "react";
+import ExperienceInterface          from "../../models/interfaces/ExperienceInterface";
+import { displayKeySkill }          from "../../utils/displayKeySkill";
+import { calculateTimeDifference }  from "../../utils/calculateTimeDifference";
 
 const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceInterface, index: number}) => {
  
   const [experienceTime, setExperienceTime] = useState(0);
 
-  useEffect(() => {
-    const differenceYears   = experienceEntry.endDate.getFullYear() - experienceEntry.startDate.getFullYear();
-    const differenceMonths  = experienceEntry.endDate.getMonth() - experienceEntry.startDate.getMonth();
-    setExperienceTime(differenceYears * 12 + differenceMonths + 1);
-  }, []);
-
-  const displayKeySkill = (skill: string, index: number) => {
-    if (index === experienceEntry.keySkills.length-1) {
-      return <span key={index}>{`${skill}`}</span>
-    }
-    return <span key={index}>{`${skill}, `}</span>
-  }
+  useEffect(() => setExperienceTime(calculateTimeDifference(experienceEntry.startDate, experienceEntry.endDate)), []);
 
   return (
     <div key={index} className="font-serif text-center bg-white rounded-lg shadow-lg transition-transform hover:scale-105">
@@ -29,7 +19,7 @@ const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceI
         </div>
         <div>
           {"Key skills: "} 
-          {experienceEntry.keySkills.map((skill, index) => displayKeySkill(skill, index))}
+          {experienceEntry.keySkills.map((skill, index) => displayKeySkill(skill, index, experienceEntry.keySkills.length))}
         </div>
         <div className="p-3">
           {experienceEntry.description}
