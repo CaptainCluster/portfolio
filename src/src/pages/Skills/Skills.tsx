@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-
-import SkillArea          from "./SkillArea";
-import SkillAreaInterface from "../../models/interfaces/SkillArea";
-import PageTitle          from "../../components/PageName";
-import { getSkillAreas }  from "../../utils/getSkillAreas";
-import { findSkillsForAreas } from "../../utils/findSkillsForAreas";
+import SkillArea                      from "./SkillArea";
+import SkillAreaInterface             from "../../models/interfaces/SkillArea";
+import PageTitle                      from "../../components/PageName";
+import { getSkillAreas }              from "../../utils/getSkillAreas";
+import { findSkillsForAreas }         from "../../utils/findSkillsForAreas";
 
 const Skills: React.FC = () => {
   const [skills, setSkills] = useState<SkillAreaInterface[]>([]);

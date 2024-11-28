@@ -1,6 +1,6 @@
-import PageTitle from "../../components/PageName";
+import PageTitle          from "../../components/PageName";
 import { experienceData } from "../../data/experience";
-import ExperienceEntry from "./ExperienceEntry"; 
+import ExperienceEntry    from "./ExperienceEntry"; 
 
 const Experience = () => {
   return (
