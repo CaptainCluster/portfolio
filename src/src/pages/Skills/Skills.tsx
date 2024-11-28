@@ -1,45 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-import { skillsData }     from "../../data/skills";
 import SkillArea          from "./SkillArea";
 import SkillAreaInterface from "../../models/interfaces/SkillArea";
-import PageTitle from "../../components/PageName";
+import PageTitle          from "../../components/PageName";
+import { getSkillAreas }  from "../../utils/getSkillAreas";
+import { findSkillsForAreas } from "../../utils/findSkillsForAreas";
 
 const Skills: React.FC = () => {
-  const [areas, setAreas]   = useState<string[]>([]);
   const [skills, setSkills] = useState<SkillAreaInterface[]>([]);
 
   useEffect(() => {
-    const uniqueAreas = new Set<string>();
-    skillsData.forEach(skill => {
-      skill.areas.forEach(area => {
-        uniqueAreas.add(area);
-      });
-    });
-    setAreas(Array.from(uniqueAreas));
-  }, []);
-
-  useEffect(() => {
-    const uniqueSkills = new Set<SkillAreaInterface>();
-    areas.forEach(area => {
-      const skillDisplayEntry: SkillAreaInterface = {
-        "area":   area,
-        "skills": [],
-      }
-      skillsData.forEach(skill => {
-        if (skill.areas.includes(area)) {
-          skillDisplayEntry.skills.push({
-            name:         skill.name,
-            type:         skill.type,
-            areas:        skill.areas,
-            proficiency:  skill.proficiency
-          }); 
-        }
-      });
-      uniqueSkills.add(skillDisplayEntry)
-    });
+    const areas = getSkillAreas();
+    const uniqueSkills: Set<SkillAreaInterface>  = findSkillsForAreas(areas);
     setSkills(Array.from(uniqueSkills));
-  }, [areas]);
+  }, []);
 
   return (
     <div className="h-screen skills-page fade-in bg-gray-100 overflow-scroll">
@@ -47,7 +21,7 @@ const Skills: React.FC = () => {
       <div className="items-center h-screen">
         <div className="grid gap-10 mt-10">
           {skills.map((skill) => (
-            <SkillArea area={skill.area} skills={skill.skills}/>  
+            <SkillArea key={skill.area} area={skill.area} skills={skill.skills}/>  
           ))}
         </div>
       </div>
