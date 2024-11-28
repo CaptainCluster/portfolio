@@ -9,16 +9,18 @@ import Skills     from './pages/Skills/Skills'
 import Projects   from './pages/Projects/Projects'
 import Error404   from './pages/Error404'
 import AboutMe    from './pages/AboutMe/AboutMe'
+import Experience from './pages/Experience/Experience'
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<FrontPage />}/>
-        <Route path="*" element={<Error404 />}/>
-        <Route path="about" element={<AboutMe />}/>
-        <Route path="skills" element={<Skills />}/>
-        <Route path="projects" element={<Projects />}/>
+        <Route path="/"           element={<FrontPage />}/>
+        <Route path="*"           element={<Error404 />}/>
+        <Route path="about"       element={<AboutMe />}/>
+        <Route path="skills"      element={<Skills />}/>
+        <Route path="projects"    element={<Projects />}/>
+        <Route path="experience"  element={<Experience />}/>
       </Routes>
     </Router>
   )

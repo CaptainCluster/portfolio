@@ -5,7 +5,7 @@ const FrontPageHeader: React.FC = () => {
   return(
     <div className="mt-6">
       <h1 className="text-1xl font-serif text-center">Welcome to 
-        <h1 className={"text-3xl font-serif text-center"}>{portfolioOwner}'s</h1>
+        <p className={"text-3xl font-serif text-center"}>{portfolioOwner}'s</p>
         portfolio!
       </h1>
     </div>
