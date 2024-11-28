@@ -1,42 +1,19 @@
-import PageTitle from "../../components/PageName";
-import { projectsData } from "../../data/projects";
-import ProjectYearInterface from "../../models/interfaces/ProjectYearInterface";
-import ProjectEntry from "./ProjectEntry";
-import { useState, useEffect } from "react";
+import PageTitle                from "../../components/PageName";
+import ProjectYearInterface     from "../../models/interfaces/ProjectYearInterface";
+import { findProjectsForYears } from "../../utils/findProjectsForYears";
+import { sortYears }            from "../../utils/sortYears";
+import ProjectEntry             from "./ProjectEntry";
+import { useState, useEffect }  from "react";
 
 const Projects = () => {
 
-  const [years, setYears]                       = useState<number[]>([]);
   const [projectYear, setProjectYear] = useState<ProjectYearInterface[]>([]);
 
   useEffect(() => {
-    const yearsSet = new Set<number>;
-    projectsData.forEach(projectEntry => {
-      if(!yearsSet.has(projectEntry.year)) {
-        yearsSet.add(projectEntry.year);
-      }
-      const yearsArray: number[] = Array.from(yearsSet);
-      yearsArray.sort((a, b) => b - a);
-      setYears(yearsArray);
-    })
-  }, [])
-
-  useEffect(() => {    
-    const projectYearPreliminary: ProjectYearInterface[] = [];
-    years.forEach(year => {
-      const projectYearEntry: ProjectYearInterface = {
-        "year":     year,
-        "projects": []
-      }
-      projectsData.forEach(projectEntry => {
-        if (projectEntry.year === year) {
-          projectYearEntry.projects.push(projectEntry);
-        }
-      });
-      projectYearPreliminary.push(projectYearEntry);
-    });
+    const yearsArray = sortYears();
+    const projectYearPreliminary = findProjectsForYears(yearsArray);
     setProjectYear(projectYearPreliminary);
-  }, [years])
+  }, [])
 
   return(
     <div className="projects-page h-screen bg-gray-100 fade-in overflow-scroll">
