@@ -15,7 +15,32 @@
   animation: fadeIn 0.5s ease-in-out;
 }
 
+.fade-in-text {
+  animation: fadeIn 1s ease-in-out;
+}
+
 .fade-in-component {
   animation: fadeIn 1.5s ease-in-out;
 }
 
+@keyframes slide-in { 
+  from { 
+    transform: translateY(0); 
+  } 
+  to { 
+    transform: translateY(100%); 
+  }
+}
+
+@keyframes height-growth {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 1000px;
+  }
+}
+
+.slide-animation {
+  animation: height-growth 0.7s ease-in-out;
+}
