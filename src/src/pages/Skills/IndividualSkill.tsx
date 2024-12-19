@@ -15,7 +15,7 @@ const IndividualSkill = ({skillName, skillProficiency}: {skillName: string, skil
   }, []);
 
   return (
-    <div className="grid mt-2 mb-2" >
+    <div className="grid mt-2 mb-2">
        <div className="flex items-center justify-center"> 
         <div className="w-2/5">
           <div className="mb-1 text-lg font-serif text-center">{skillName}</div>
