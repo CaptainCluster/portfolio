@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
     <div className="h-screen skills-page fade-in bg-gray-100 overflow-scroll">
       <PageTitle pageTitle="Skills" />
       <div className="items-center h-screen">
-        <div className="grid gap-10 mt-10">
+        <div className="grid gap-10 mt-10 mb-16">
           {skills.map((skill) => (
             <SkillArea key={skill.area} area={skill.area} skills={skill.skills}/>  
           ))}
