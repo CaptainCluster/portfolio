@@ -3,6 +3,6 @@ export default interface ExperienceInterface {
   startDate:    Date;
   endDate:      Date;
   keySkills:    string[];
-  description:  string;
+  description:  string[];
   images:       string[];
 }

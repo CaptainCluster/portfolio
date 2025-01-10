@@ -16,7 +16,7 @@ export const projectsData: ProjectsInterface[] = [
   {
     "name":           "Bachelor's Thesis Technical Work",
     "images":         [],
-    "technologies":   [],
+    "technologies":   ["Rust"],
     "status":         "Finished",
     "year":           2024,
     "description":    [
@@ -37,7 +37,7 @@ export const projectsData: ProjectsInterface[] = [
         "alt":  "Haalarilanit website image"
       },
     ],
-    "technologies": ["JavaScript, HTML, CSS"],
+    "technologies": ["JavaScript", "HTML", "CSS"],
     "status":       "Finished",
     "year":         2024,
     "description":  [
