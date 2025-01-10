@@ -1,3 +1,8 @@
+/**
+ * This file contains the descriptions for the defined skills. Each skill is 
+ * written fully lowercase.
+ */ 
+
 import SkillPanelDataInterface from "../models/interfaces/SkillPanelDataInterface";
 
 export const skillPanelData: SkillPanelDataInterface = {
@@ -43,7 +48,16 @@ export const skillPanelData: SkillPanelDataInterface = {
 
   "sass":         [
     `
+      Since using SASS resembles using CSS a lot, using it is very simple for me. I prefer SASS for its 
+      steps towards modularization.
+    `
+  ],
 
+  "tailwind css":  [
+    `
+      I find Tailwind CSS beneficial for React workflow. Styling in classes provides quick results, 
+      despite the feeling of bloat. I also use Tailwind due to it having enough flexibility for 
+      custom classes. This is what I prefer for larger projects, especially when using React.
     `
   ],
 
@@ -51,6 +65,14 @@ export const skillPanelData: SkillPanelDataInterface = {
     `
       I used Java when learning about the OOP (Object-Oriented Programming) paradigm. These days I 
       primarily use it for back-end development. 
+    `
+  ],
+
+  "express (ts & js)": [
+    `
+      I used Express to write back-end for my first web applications. While I appreciate it for 
+      being quite easy to use and flexible, I have started to prefer the usage of either the 
+      Spring Framework with Java or ASP .NET Core with C#.
     `
   ],
 

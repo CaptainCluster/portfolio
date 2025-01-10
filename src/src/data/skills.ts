@@ -47,6 +47,12 @@ export const skillsData: SkillInterface[] = [
     "areas":        ["Front-End"],
     "proficiency":  7
   },
+  {
+    "name":         "Tailwind CSS",
+    "type":         "Web Styling",
+    "areas":        ["Front-End"],
+    "proficiency":  8
+  },
 
   // Web Development - Back-End
   {
