@@ -2,12 +2,12 @@ import { useEffect, useState }      from "react";
 import ExperienceInterface          from "../../models/interfaces/ExperienceInterface";
 import { calculateTimeDifference }  from "../../utils/calculateTimeDifference";
 import SkillBadgeHolder from "../../components/SkillBadgeHolder";
+import ExpandButton from "../../components/ExpandButton";
 
 const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceInterface, index: number}) => {
  
   const [experienceTime, setExperienceTime] = useState(0);
-  const [buttonTitle, setButtonTitle] = useState("Expand");
-  const [descriptionExpanded, setDescriptionExpanded] = useState(false);
+  const [expand, setExpand] = useState(false);
 
   useEffect(() => setExperienceTime(calculateTimeDifference(experienceEntry.startDate, experienceEntry.endDate)), []);
 
@@ -24,18 +24,10 @@ const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceI
           <h2 className="mb-6 text-xl">Skills needed</h2>
           <SkillBadgeHolder skills={experienceEntry.keySkills}/>
         </div>
-  
-        <button 
-          className="bg-gray-100 border rounded-lg p-2 w-full border-gray-300 my-4" 
-          onClick={() => {
-            const newTitle: string = buttonTitle === "Expand" ? "Hide" : "Expand";
-            setButtonTitle(newTitle);
-            setDescriptionExpanded(!descriptionExpanded);
-          }}>
-          <p className="transform transition-transform hover:scale-105">{buttonTitle}</p>
-        </button>
+        
+        <ExpandButton expand={expand} setExpand={setExpand}/>
 
-        {descriptionExpanded && <div className="bg-gray-100 rounded-lg text-left p-8 slide-animation">
+        {expand && <div className="bg-gray-100 rounded-lg text-left p-8 slide-animation">
           <h2 className="text-xl text-center my-2 fade-in-text">Description</h2>
           {experienceEntry.description.map((entry, index) => <p className="p-2 fade-in-text" key={index}>{entry}</p>)}
         </div>}
