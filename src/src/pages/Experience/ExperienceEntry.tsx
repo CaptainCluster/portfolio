@@ -1,8 +1,7 @@
 import { useEffect, useState }      from "react";
 import ExperienceInterface          from "../../models/interfaces/ExperienceInterface";
-import { displayKeySkill }          from "../../utils/displayKeySkill";
 import { calculateTimeDifference }  from "../../utils/calculateTimeDifference";
-import { skillBadgeData } from "../../data/skillBadge";
+import SkillBadgeHolder from "../../components/SkillBadgeHolder";
 
 const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceInterface, index: number}) => {
  
@@ -20,14 +19,18 @@ const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceI
           <p>{`In months: ${experienceTime}`}</p>
         </div>
         
-        <div className="my-8">
-          {"Key skills: "} 
-          {experienceEntry.keySkills.map((skill, index) => displayKeySkill(skill, index, experienceEntry.keySkills.length))}
+        <div className="grid bg-gray-100 p-8">
+          <h2 className="mb-6 text-xl">Skills needed</h2>
+          <SkillBadgeHolder skills={experienceEntry.keySkills}/>
         </div>
+  
+        <button 
+          className="border-b border-gray-800 my-4" 
+          onClick={() => setDescriptionExpanded(!descriptionExpanded)}>
+          Expand
+        </button>
 
-        <button className="border-b border-gray-800 my-4" onClick={() => setDescriptionExpanded(!descriptionExpanded)}>Expand</button>
-
-        {descriptionExpanded && <div className="bg-gray-100 rounded-lg text-left p-10 slide-animation">
+        {descriptionExpanded && <div className="bg-gray-100 rounded-lg text-left p-8 slide-animation">
           <h2 className="text-xl text-center my-2 fade-in-text">Description</h2>
           {experienceEntry.description.map((entry, index) => <p className="p-2 fade-in-text" key={index}>{entry}</p>)}
         </div>}
