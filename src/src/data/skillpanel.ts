@@ -5,7 +5,8 @@ export const skillPanelData: SkillPanelDataInterface = {
   "javascript":   [
     `
       I started web programming by using JavaScript. Most of my early static web projects were written 
-      in JavaScript. Now I prefer to use TypeScript whenever possible.
+      in JavaScript. I still may use vanilla JS for creating simple websites that do not have a lot of 
+      complexity. Now I prefer to use TypeScript whenever possible, especially for larger projects.
     `
   ],
 
@@ -17,10 +18,32 @@ export const skillPanelData: SkillPanelDataInterface = {
     `
   ],
 
+  "react (ts & js)":        [
+    `
+      React is the most important library I use for front-end development. It has come very handy when
+      I have built complex web applications like LangMaster. Building components effectively means I 
+      can separate large things into blocks that I can then either combine or work on separately.
+    `
+  ],
+
   "html":         [
     `
       Obviously, I have a strong understanding of HTML. It works well when I want to create very basic
       web pages.
+    `
+  ],
+
+  "css":          [
+    `
+      I use CSS for styling small websites. I have used it plenty, and thus I can get pages to look 
+      mostly desirable with just what I have memorized. I still use vanilla CSS for small web projects,
+      but, in practice, I prefer either SASS or Tailwind CSS.
+    `
+  ],
+
+  "sass":         [
+    `
+
     `
   ],
 
