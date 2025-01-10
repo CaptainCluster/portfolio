@@ -76,6 +76,23 @@ export const skillPanelData: SkillPanelDataInterface = {
     `
   ],
 
+  "spring boot (java)": [
+    `
+      Spring Boot is what I am currently using for back-end development. I appreciate its 
+      separation of concerns and how it is a strong ecosystem. I find Spring Boot better for 
+      large projects than Express due to both the ease of configuring a database and how it 
+      has been battle-tested for a much longer time.
+    `
+  ],
+
+  "postgresql":   [
+    `
+      PostgreSQL is the main database management system I use. It goes well with back-end I
+      have developed with Java Spring Boot. I also appreciate it for being free and open 
+      source.
+    `
+  ],
+
   "python":       [
     `
       The very first programming language I have used. It was my main language for early projects.
