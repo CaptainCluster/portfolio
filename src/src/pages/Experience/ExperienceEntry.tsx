@@ -6,6 +6,7 @@ import SkillBadgeHolder from "../../components/SkillBadgeHolder";
 const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceInterface, index: number}) => {
  
   const [experienceTime, setExperienceTime] = useState(0);
+  const [buttonTitle, setButtonTitle] = useState("Expand");
   const [descriptionExpanded, setDescriptionExpanded] = useState(false);
 
   useEffect(() => setExperienceTime(calculateTimeDifference(experienceEntry.startDate, experienceEntry.endDate)), []);
@@ -25,9 +26,13 @@ const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceI
         </div>
   
         <button 
-          className="border-b border-gray-800 my-4" 
-          onClick={() => setDescriptionExpanded(!descriptionExpanded)}>
-          Expand
+          className="bg-gray-100 border rounded-lg p-2 w-full border-gray-300 my-4" 
+          onClick={() => {
+            const newTitle: string = buttonTitle === "Expand" ? "Hide" : "Expand";
+            setButtonTitle(newTitle);
+            setDescriptionExpanded(!descriptionExpanded);
+          }}>
+          <p className="transform transition-transform hover:scale-105">{buttonTitle}</p>
         </button>
 
         {descriptionExpanded && <div className="bg-gray-100 rounded-lg text-left p-8 slide-animation">
