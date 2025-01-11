@@ -36,7 +36,7 @@ const ProjectEntry = ({ name, images, technologies, status, description, links }
       {
         expand &&
         <div className="bg-gray-100 slide-animation p-5">
-          {description.map((descriptionEntry) => (<p className="text-left p-5 fade-in-text">{descriptionEntry}</p>))}
+          {description.map((descriptionEntry) => (<p className="text-left font-average sm:text-xl p-5 fade-in-text">{descriptionEntry}</p>))}
           <div className="mb-5">
             {images.map((imageEntry) => (<img className="rounded-lg fade-in-text" src={imgDirectory + imageEntry.src} alt={imageEntry.alt}/>))}
           </div>

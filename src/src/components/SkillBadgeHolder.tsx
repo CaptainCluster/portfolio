@@ -14,7 +14,7 @@ const SkillBadgeHolder = ({ skills }: { skills: string[] }) => {
 
   return (
     <>
-      <div className="flex justify-center">
+      <div className="grid sm:flex justify-center">
         {
           skills.map((skillEntry, index) => {
             const badge = retrieveBadge(skillEntry, index).filter(Boolean)[0];

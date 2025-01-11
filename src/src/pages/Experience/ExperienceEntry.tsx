@@ -29,7 +29,7 @@ const ExperienceEntry = ({experienceEntry, index}: {experienceEntry: ExperienceI
 
         {expand && <div className="bg-gray-100 rounded-lg text-left p-8 slide-animation">
           <h2 className="text-xl text-center my-2 fade-in-text">Description</h2>
-          {experienceEntry.description.map((entry, index) => <p className="p-2 fade-in-text" key={index}>{entry}</p>)}
+          {experienceEntry.description.map((entry, index) => <p className="font-average sm:text-xl p-2 fade-in-text" key={index}>{entry}</p>)}
         </div>}
       </div>
     </div>
