@@ -121,6 +121,30 @@ export const skillPanelData: SkillPanelDataInterface = {
     `
   ],
 
+  "rust":       [
+    `
+      The main usage I have had for Rust was the creation of the technical work for my Bachelor's 
+      Thesis. I made exercises covering basics of various topics, such as back-end development with 
+      the Rocket Framework, systems programming and how Rust handles memory ownership. 
+    `
+  ],
+
+  "c":          [
+    `
+      I have not used C a lot after learning its basics. Despite this, I have formed a deep 
+      apprecation towards the language and can see the beauty in it. This sentiment has probably 
+      manifested due to me learning various theoretical aspects about things like operating systems.
+    `
+  ],
+
+  "c++":        [
+    `
+      Due to my interest, I have worked on two personal projects with C++. One of them is very basic,
+      whereas the other one is in an unfinished state. I have managed to make a program that is capable
+      of playing audio files.
+    `
+  ],
+
   "docker":     [
     "I have written and optimized Dockerfiles in the past."
   ],
