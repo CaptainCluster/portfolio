@@ -92,6 +92,20 @@ export const skillPanelData: SkillPanelDataInterface = {
       source.
     `
   ],
+  "sqlite":       [
+    `
+      I learned to use SQLite back when I was learning basics of database systems. Due to 
+      PostgreSQL being very similar in syntax, I still have a good knowledge on how to use
+      SQLite.
+    `
+  ],
+  "mongodb":      [
+    `
+      I used MongoDB for the very first full-stack applications I made. This is due to the 
+      utilization of MERN stack. MongoDB felt fitting due to it using JSON, and thus fitting 
+      a JavaScript-based workflow.
+    `
+  ],
 
   "python":       [
     `
@@ -104,6 +118,47 @@ export const skillPanelData: SkillPanelDataInterface = {
       In terms of work, I have created both client and server scripts for a university course. The 
       students used the client script I had written in order to access the server in a Raspberry Pi.
       The intention was making Wireshark captures.
+    `
+  ],
+
+  "rust":       [
+    `
+      The main usage I have had for Rust was the creation of the technical work for my Bachelor's 
+      Thesis. I made exercises covering basics of various topics, such as back-end development with 
+      the Rocket Framework, systems programming and how Rust handles memory ownership. 
+    `
+  ],
+
+  "c":          [
+    `
+      I have not used C a lot after learning its basics. Despite this, I have formed a deep 
+      apprecation towards the language and can see the beauty in it. This sentiment has probably 
+      manifested due to me learning various theoretical aspects about things like operating systems.
+    `
+  ],
+
+  "c++":        [
+    `
+      Due to my interest, I have worked on two personal projects with C++. One of them is very basic,
+      whereas the other one is in an unfinished state. I have managed to make a program that is capable
+      of playing audio files.
+    `
+  ],
+
+  "docker":     [
+    "I have written and optimized Dockerfiles in the past."
+  ],
+
+  "git":        [
+    "Git is what I use for version control."
+  ],
+
+  "wordpress":  [
+    `
+      WordPress has been very essential to me as the webmaster of both ESN Lappeenranta and Cluster
+      Ry. I have maintained and updated existing pages, written new articles and created new 
+      products that can be bought in order to attend student events. When the events have been held,
+      the past products will be made unavailable for purchase.
     `
   ]
 }

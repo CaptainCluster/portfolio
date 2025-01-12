@@ -119,13 +119,19 @@ export const skillsData: SkillInterface[] = [
     "name":         "Docker",
     "type":         "Containerization",
     "areas":        ["Other"],
-    "proficiency":  7
+    "proficiency":  5
   },
   {
     "name":         "Git",
     "type":         "Version Control",
     "areas":        ["Other"],
     "proficiency":  9
+  },
+  {
+    "name":         "Wordpress",
+    "type":         "Web Management",
+    "areas":        ["Other"],
+    "proficiency":  6
   }
 ]
 
