@@ -105,6 +105,23 @@ export const skillPanelData: SkillPanelDataInterface = {
       students used the client script I had written in order to access the server in a Raspberry Pi.
       The intention was making Wireshark captures.
     `
+  ],
+
+  "docker":     [
+    "I have written and optimized Dockerfiles in the past."
+  ],
+
+  "git":        [
+    "Git is what I use for version control."
+  ],
+
+  "wordpress":  [
+    `
+      WordPress has been very essential to me as the webmaster of both ESN Lappeenranta and Cluster
+      Ry. I have maintained and updated existing pages, written new articles and created new 
+      products that can be bought in order to attend student events. When the events have been held,
+      the past products will be made unavailable for purchase.
+    `
   ]
 }
 

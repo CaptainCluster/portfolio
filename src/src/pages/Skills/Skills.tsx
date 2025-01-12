@@ -17,13 +17,14 @@ const Skills: React.FC = () => {
   return (
     <div className="h-screen skills-page fade-in bg-gray-100 overflow-scroll">
       <PageTitle pageTitle="Skills" />
-      <div className="items-center h-screen">
+      <div className="items-center">
         <div className="grid gap-10 mt-10 mb-16">
           {skills.map((skill) => (
             <SkillArea key={skill.area} area={skill.area} skills={skill.skills}/>  
           ))}
         </div>
       </div>
+      <div className="h-40"></div>
     </div>
   );
 };
