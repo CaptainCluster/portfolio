@@ -92,6 +92,20 @@ export const skillPanelData: SkillPanelDataInterface = {
       source.
     `
   ],
+  "sqlite":       [
+    `
+      I learned to use SQLite back when I was learning basics of database systems. Due to 
+      PostgreSQL being very similar in syntax, I still have a good knowledge on how to use
+      SQLite.
+    `
+  ],
+  "mongodb":      [
+    `
+      I used MongoDB for the very first full-stack applications I made. This is due to the 
+      utilization of MERN stack. MongoDB felt fitting due to it using JSON, and thus fitting 
+      a JavaScript-based workflow.
+    `
+  ],
 
   "python":       [
     `
