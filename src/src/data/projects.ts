@@ -21,13 +21,24 @@ export const projectsData: ProjectsInterface[] = [
     "year":           2024,
     "description":    [
       `
-        To be announced.
+        As part of my bachelor's thesis work, I made Rust programming exercises that 
+        provide at least five weeks of education for students. The topics covered are
+        the following: basics of programming with Rust, Rust ownership, how Rust 
+        handled OOP, systems programming and back-end development with the Rocket 
+        framework.
+      `,
+      `
+        For every single exercise I made, I also implemented automated evalutions with
+        CodeGrade. The basic exercises were checked by comparing submission output to 
+        the desired one. On the other hand, more complex evaluations required test 
+        files written in Rust. On top of that, I had to use shell scripts to set up 
+        the test environment, and to optimize it.
       `,
       `
         Note! Due to the intended usage of the work, the source code is proprietary.
       `
     ],
-    "links":          []
+    "links":          ["https://lutpub.lut.fi/handle/10024/168689"]
   },
   {
     "name":         "Haalarilanit Website",
