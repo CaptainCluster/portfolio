@@ -105,7 +105,7 @@ export const skillsData: SkillInterface[] = [
     "name":         "C",
     "type":         "Programming Language",
     "areas":        ["General"],
-    "proficiency":  4
+    "proficiency":  5
   },
   {
     "name":         "C++",
