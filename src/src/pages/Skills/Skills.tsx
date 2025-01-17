@@ -4,6 +4,7 @@ import SkillAreaInterface             from "../../models/interfaces/SkillArea";
 import PageTitle                      from "../../components/PageName";
 import { getSkillAreas }              from "../../utils/getSkillAreas";
 import { findSkillsForAreas }         from "../../utils/findSkillsForAreas";
+import BackButton from "../../components/BackButton";
 
 const Skills: React.FC = () => {
   const [skills, setSkills] = useState<SkillAreaInterface[]>([]);
@@ -16,9 +17,10 @@ const Skills: React.FC = () => {
 
   return (
     <div className="h-screen skills-page fade-in bg-gray-100 overflow-scroll">
+      <BackButton />
       <PageTitle pageTitle="Skills" />
       <div className="flex justify-center">
-        <p className="w-1/4 text-center">
+        <p className="w-1/2 sm:w-1/4 text-center">
           The skill bars are a reflection of how well I think I am experienced 
           with the skills they revolve around. My confidence regarding them 
           also plays a role in the scores I have given them.

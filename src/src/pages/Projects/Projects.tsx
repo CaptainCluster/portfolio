@@ -1,3 +1,4 @@
+import BackButton from "../../components/BackButton";
 import PageTitle                from "../../components/PageName";
 import ProjectYearInterface     from "../../models/interfaces/ProjectYearInterface";
 import { findProjectsForYears } from "../../utils/findProjectsForYears";
@@ -17,6 +18,7 @@ const Projects = () => {
 
   return(
     <div className="projects-page h-screen bg-gray-100 fade-in overflow-scroll">
+      <BackButton />
       <PageTitle pageTitle="Projects"/>
       <div className="grid grid-cols-1 gap-10 p-10 max-w-7xl mx-auto">
         {projectYear.map((projectYearEntry) => (
