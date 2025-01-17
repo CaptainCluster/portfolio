@@ -17,6 +17,13 @@ const Skills: React.FC = () => {
   return (
     <div className="h-screen skills-page fade-in bg-gray-100 overflow-scroll">
       <PageTitle pageTitle="Skills" />
+      <div className="flex justify-center">
+        <p className="w-1/4 text-center">
+          The skill bars are a reflection of how well I think I am experienced 
+          with the skills they revolve around. My confidence regarding them 
+          also plays a role in the scores I have given them.
+        </p>
+      </div>
       <div className="items-center">
         <div className="grid gap-10 mt-10 mb-16">
           {skills.map((skill) => (
