@@ -50,6 +50,10 @@
   font-size: 16px;
 }
 
+.pull-upwards {
+  margin-bottom: -10vh;
+}
+
 
 .Typewriter__wrapper span {
   font-size: 24px;

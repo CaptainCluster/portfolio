@@ -4,7 +4,7 @@ const FrontPageDescription = () => {
   const typewriterDescription: string = "<span>Software Engineer, </span> <p></p> <span>Web Developer, <p></p> </span> <span>Problem Solver</span>" 
 
   return (
-    <div className="flex justify-center typewriter-container mt-10">
+    <div className="flex justify-center h-8 mt-10 sm:pull-upwards">
       <div className="text-center font-serif">
         <TypewriterComponent 
           onInit={(typewriter) => {
