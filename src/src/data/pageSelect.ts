@@ -2,14 +2,14 @@ import PageSelectInterface from "../models/interfaces/PageSelectInterface";
 
 export const selectablePages: PageSelectInterface[] = [
   {
-    pageTitle:  "About Me",
-    pageBio:    "Learn more about me, in general.",
-    pageUrl:    "#about"
-  },
-  {
     pageTitle:  "Projects",
     pageBio:    "Here are some of my notable projects.",
     pageUrl:    "#projects"
+  },
+  {
+    pageTitle:  "Experience",
+    pageBio:    "Relevant practical experience I have.",
+    pageUrl:    "#experience"
   },
   {
     pageTitle:  "Skills",
@@ -17,8 +17,8 @@ export const selectablePages: PageSelectInterface[] = [
     pageUrl:    "#skills"
   },
   {
-    pageTitle:  "Experience",
-    pageBio:    "Relevant practical experience I have.",
-    pageUrl:    "#experience"
+    pageTitle:  "About Me",
+    pageBio:    "Learn more about me, in general.",
+    pageUrl:    "#about"
   }
 ] 
