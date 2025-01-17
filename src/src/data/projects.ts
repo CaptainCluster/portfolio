@@ -61,7 +61,7 @@ export const projectsData: ProjectsInterface[] = [
         site, even after the event was revealed, based on the wishes of the organizers.
       `
     ],
-    "links":        []
+    "links":        ["https://haalarilanit.ruut.me/"]
   },
   {
     "name":         "FollowTracker",
