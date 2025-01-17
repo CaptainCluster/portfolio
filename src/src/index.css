@@ -41,12 +41,18 @@
   }
 }
 
+
 .slide-animation {
   animation: height-growth 0.7s ease-in-out;
 }
 
 .font-average{
   font-size: 16px;
+}
+
+
+.Typewriter__wrapper span {
+  font-size: 24px;
 }
 
 @media screen and (max-width: 500px) {
