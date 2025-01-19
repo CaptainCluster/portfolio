@@ -14,6 +14,32 @@ import ProjectsInterface from "../models/interfaces/ProjectsInterface";
 
 export const projectsData: ProjectsInterface[] = [
   {
+    "name":           "LangMaster",
+    "images":         [],
+    "technologies":   ["TypeScript", "React", "Java", "Spring", "PostgreSQL", "TailwindCSS", "pnpm"],
+    "status":         "Under development",
+    "year":           2025,
+    "description":    [
+      `
+        LangMaster is a full-stack language learning application. It can be used to create 
+        exercises in order to study any language of choice. It utilizes a React TS front-end,
+        with styling work done using TailwindCSS, to provide a way for the user to interact
+        with the application. The back-end uses Java, the Spring framework and Postgres to 
+        manage core application logic, store data and provide necessities for the client-side.
+      `,
+      `
+        The project is in development. In the future, it will give users the ability to 
+        download their exercises in a specific file format that the application supports.
+        This would allow the distribution of exercises, and thus sharing would become 
+        a significant part of learning.
+      `,
+      `
+        LangMaster is free software and licensed under GNU General Public License V3.
+      `
+    ],
+    "links":          ["https://github.com/CaptainCluster/LangMaster"]     
+  },
+  {
     "name":           "Bachelor's Thesis Technical Work",
     "images":         [],
     "technologies":   ["Rust"],

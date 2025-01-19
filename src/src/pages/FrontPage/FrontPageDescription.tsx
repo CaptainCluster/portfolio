@@ -8,8 +8,9 @@ const FrontPageDescription = () => {
       <div className="text-center font-serif">
         <TypewriterComponent 
           onInit={(typewriter) => {
-            typewriter
+            typewriter 
               .typeString(typewriterDescription)
+              .changeDelay()
               .start()
           }}
         />
