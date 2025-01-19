@@ -41,6 +41,10 @@
   }
 }
 
+.skill-info {
+  width: 25%;
+  text-align: center;
+}
 
 .slide-animation {
   animation: height-growth 0.7s ease-in-out;
@@ -62,5 +66,12 @@
 @media screen and (max-width: 500px) {
   .font-average {
     font-size: 14px;
+  }
+  .skill-info {
+    font-size: 12px;
+    margin-top: -1vh;
+    margin-bottom: -1vh;
+
+    width: 25%;
   }
 }
