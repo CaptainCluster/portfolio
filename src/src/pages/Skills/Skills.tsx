@@ -20,10 +20,10 @@ const Skills: React.FC = () => {
       <BackButton />
       <PageTitle pageTitle="Skills" />
       <div className="flex justify-center">
-        <p className="w-1/2 sm:w-1/4 text-center">
-          The skill bars are a reflection of how well I think I am experienced 
-          with the skills they revolve around. My confidence regarding them 
-          also plays a role in the scores I have given them.
+        <p className="w-3/4 sm:w-1/4 text-center skill-info">
+          This page contains information regarding what skills I have used. The blue
+          bars are a reflection of how confident and proficient I am with certain 
+          skills.
         </p>
       </div>
       <div className="items-center">

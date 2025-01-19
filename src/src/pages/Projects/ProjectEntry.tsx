@@ -29,7 +29,7 @@ const ProjectEntry = ({ name, images, technologies, status, description, links }
         </div>
         <div>
           <h2 className="text-xl">{linksSectionTitle}</h2>
-          {links.map((link) => (<a className="text-blue-500" href={link}>{link}</a>))}
+          {links.map((link) => (<a className="text-blue-500" href={link.url}>{link.shortUrl}</a>))}
         </div>
       </div>
       <ExpandButton expand={expand} setExpand={setExpand}/>

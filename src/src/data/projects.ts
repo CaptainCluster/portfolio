@@ -37,7 +37,13 @@ export const projectsData: ProjectsInterface[] = [
         LangMaster is free software and licensed under GNU General Public License V3.
       `
     ],
-    "links":          ["https://github.com/CaptainCluster/LangMaster"]     
+    "links":          [
+      {
+        "url":      "https://github.com/CaptainCluster/LangMaster",
+        "shortUrl": "LangMaster repo",
+        "alt":      "Link to LangMaster repo"
+      }
+    ]     
   },
   {
     "name":           "Bachelor's Thesis Technical Work",
@@ -64,7 +70,13 @@ export const projectsData: ProjectsInterface[] = [
         Note! Due to the intended usage of the work, the source code is proprietary.
       `
     ],
-    "links":          ["https://lutpub.lut.fi/handle/10024/168689"]
+    "links":          [
+      {
+        "url":      "https://lutpub.lut.fi/handle/10024/168689",
+        "shortUrl": "Link to thesis",
+        "alt":      "Link to thesis"
+      }
+    ]
   },
   {
     "name":         "Haalarilanit Website",
@@ -87,7 +99,13 @@ export const projectsData: ProjectsInterface[] = [
         site, even after the event was revealed, based on the wishes of the organizers.
       `
     ],
-    "links":        ["https://haalarilanit.ruut.me/"]
+    "links":          [
+      {
+        "url":      "https://haalarilanit.ruut.me",
+        "shortUrl": "Haalarilanit website",
+        "alt":      "Link to Haalarilanit website"
+      }
+    ]
   },
   {
     "name":         "FollowTracker",
@@ -108,6 +126,12 @@ export const projectsData: ProjectsInterface[] = [
         the data is acquired was perfected.
       `
     ],
-    "links":        ["https://github.com/captaincluster/FollowTracker"]      
+    "links":          [
+      {
+        "url":      "https://github.com/captaincluster/FollowTracker",
+        "shortUrl": "FollowTracker repo",
+        "alt":      "Link to FollowTracker repo"
+      }
+    ]
   },
 ] 

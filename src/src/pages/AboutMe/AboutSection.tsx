@@ -11,7 +11,7 @@ const AboutSection = ({ header, textBody }: AboutMeInterface) => {
     <div className="bg-white text-center rounded-lg shadow-lg transform transition-transform md:hover:scale-105">
       <div className="p-5 md:py-6">
         <h1 className="font-bold md:text-2xl py-4 text-center">{header}</h1>
-        <div className="bg-gray-100 p-1 md:p-5">
+        <div className="bg-gray-100 px-1 py-3 md:p-5">
           {textBody.map(textBodyElement => createParagraph(textBodyElement))} 
         </div>
       </div>

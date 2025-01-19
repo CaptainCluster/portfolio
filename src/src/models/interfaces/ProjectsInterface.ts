@@ -1,4 +1,5 @@
 import ImageInterface from "./ImageInterface";
+import UrlInterface from "./UrlInterface";
 
 export default interface ProjectsInterface {
   name:         string;
@@ -7,5 +8,5 @@ export default interface ProjectsInterface {
   status:       string;
   year:         number;
   description:  string[];
-  links:        string[];
+  links:        UrlInterface[];
 }
