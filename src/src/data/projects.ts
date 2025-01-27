@@ -36,9 +36,10 @@ export const projectsData: ProjectsInterface[] = [
       `
         Our team of four made a client-side for a course review web application. Due to the back-end 
         functionality being forced to minimum, a JSON server was used to simulate the API that fetches
-        both course data and reviews. The application was developed in January, 2025 and hosted by 
+        both course data and reviews. The application was developed in January, 2025 for a course hosted by 
         both LUT University and TwoDay (Visma). In the end our team determined the project fulfills the 
-        criteria defined in the MVP.
+        criteria defined in the MVP. It got good feedback, mainly for functionality and our team was praised
+        for communication.
       `,
       `
         I defined requirements and use cases with Figma for the application. I created the GitHub repository,
