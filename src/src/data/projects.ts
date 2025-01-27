@@ -34,27 +34,29 @@ export const projectsData: ProjectsInterface[] = [
     "year":           2025,
     "description":    [
       `
-        Our team of four made a client-side for a course review web application. Due to the back-end 
-        functionality being forced to minimum, a JSON server was used to simulate the API that fetches
-        both course data and reviews. The application was developed in January, 2025 for a course hosted by 
-        both LUT University and TwoDay (Visma). In the end our team determined the project fulfills the 
-        criteria defined in the MVP. It got good feedback, mainly for functionality and our team was praised
-        for communication.
+        Our team of four made a client-side for a course review web application. Due to the focus of the 
+        hackathon being heavily on front-end and the usage of basic APIs, a JSON server was used to simulate 
+        the API that fetches both course data and reviews. A back-end solution is not what the hackathon 
+        covered, but the JSON server approach was recommended. The project was developed in January, 
+        2025 for a hackathon course hosted by both LUT University and TwoDay (Visma). In the end our team 
+        determined the project fulfills the criteria defined in the MVP. It got good feedback, mainly for 
+        functionality. Our team's success in communication was reflected well.
       `,
       `
-        I defined requirements and use cases with Figma for the application. I created the GitHub repository,
-        and initialized the project. I also helped ensure people have problems to solve by creating GitHub 
-        issues and discussing about who to assign to which with the team. Not only that, I was very active 
-        in the coding side and built the course search page which ended up looking almost identical to the 
-        Figma concept. I also fixed bugs and gave feedback and advice to other team members regarding code
-        quality.
+        I defined requirements and use cases with Figma for the application. I created the GitHub repository
+        and initialized the project. In addition, our team coordinated together to ensure everyone has a 
+        task to work on. I did so by creating issues and assigning people to them. I was very active 
+        on the coding side and built the course search page which ended up looking almost identical to its 
+        Figma concept. I also fixed bugs, enhanced mobile scalability and gave feedback and advice to other 
+        team members regarding code quality.
       `,
       `
         I believe that my biggest accomplishment during the Hackathon concerned teamwork. An employee from TwoDay
         recommended my team to hold a meeting every day to enhance productivity. This provided immediate results 
         and we were able to define an MVP for the project and determine which implementations are within the scope,
         and which are outside. I took the varying skill levels of the team into account when creating GitHub issues.
-        This helped ensure people get to both learn and contribute no matter how experienced they are. 
+        I am proud of our team and grateful of what we have accomplished. It is great that this was an experience
+        from which everyone learned something new.
       `
     ],
     "links":          [
