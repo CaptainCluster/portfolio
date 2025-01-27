@@ -14,6 +14,57 @@ import ProjectsInterface from "../models/interfaces/ProjectsInterface";
 
 export const projectsData: ProjectsInterface[] = [
   {
+    "name":           "Reach/Figma Hackathon, 2025",
+    "images":         [
+      {
+        "src":  "react_hackathon_1.png",
+        "alt":  "React hackathon image 1"
+      },
+      {
+        "src":  "react_hackathon_2.png",
+        "alt":  "React hackathon image 2"
+      },
+      {
+        "src":  "react_hackathon_3.png",
+        "alt":  "React hackathon image 3"
+      }
+    ],
+    "technologies":   ["TypeScript", "React", "Figma", "TailwindCSS", "pnpm"],
+    "status":         "Finished",
+    "year":           2025,
+    "description":    [
+      `
+        Our team of four made a client-side for a course review web application. Due to the back-end 
+        functionality being forced to minimum, a JSON server was used to simulate the API that fetches
+        both course data and reviews. The application was developed in January, 2025 and hosted by 
+        both LUT University and TwoDay (Visma). In the end our team determined the project fulfills the 
+        criteria defined in the MVP.
+      `,
+      `
+        I defined requirements and use cases with Figma for the application. I created the GitHub repository,
+        and initialized the project. I also helped ensure people have problems to solve by creating GitHub 
+        issues and discussing about who to assign to which with the team. Not only that, I was very active 
+        in the coding side and built the course search page which ended up looking almost identical to the 
+        Figma concept. I also fixed bugs and gave feedback and advice to other team members regarding code
+        quality.
+      `,
+      `
+        I believe that my biggest accomplishment during the Hackathon concerned teamwork. An employee from TwoDay
+        recommended my team to hold a meeting every day to enhance productivity. This provided immediate results 
+        and we were able to define an MVP for the project and determine which implementations are within the scope,
+        and which are outside. I took the varying skill levels of the team into account when creating GitHub issues.
+        This helped ensure people get to both learn and contribute no matter how experienced they are. 
+      `
+    ],
+    "links":          [
+      {
+        "url":      "https://github.com/CaptainCluster/react_hackathon_2025",
+        "shortUrl": "Hackathon repo",
+        "alt":      "Link to hackathon repo"
+      }
+    ]
+  },
+  {
     "name":           "LangMaster",
     "images":         [],
     "technologies":   ["TypeScript", "React", "Java", "Spring", "PostgreSQL", "TailwindCSS", "pnpm"],
