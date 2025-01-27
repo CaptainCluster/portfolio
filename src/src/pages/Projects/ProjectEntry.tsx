@@ -16,7 +16,7 @@ const ProjectEntry = ({ name, images, technologies, status, description, links }
 
   const imgDirectory: string = "../src/assets/"
   return (
-    <div className="font-serif p-5 text-center bg-white rounded-lg shadow-lg transition-transform hover:scale-105">
+    <div className="font-serif p-5 text-center bg-white rounded-lg shadow-lg transition-transform sm:hover:scale-105">
       <div className="">
         <h1 className="text-2xl mb-5">{name}</h1>
         <div className="grid bg-gray-100 rounded-lg p-8">

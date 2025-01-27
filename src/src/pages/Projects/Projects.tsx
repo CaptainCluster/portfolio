@@ -23,7 +23,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 gap-10 p-10 max-w-7xl mx-auto">
         {projectYear.map((projectYearEntry) => (
           <>
-            <h2 className="text-center text-2xl">{projectYearEntry.year}</h2>
+            <h2 className="text-center text-2xl mb-5">{projectYearEntry.year}</h2>
             <>
               {projectYearEntry.projects.map((projectEntry) => (
                 <ProjectEntry 
