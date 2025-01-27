@@ -23,6 +23,10 @@ export const projectsData: ProjectsInterface[] = [
       {
         "src":  "react_hackathon_2.png",
         "alt":  "React hackathon image 2"
+      },
+      {
+        "src":  "react_hackathon_3.png",
+        "alt":  "React hackathon image 3"
       }
     ],
     "technologies":   ["TypeScript", "React", "Figma", "TailwindCSS", "pnpm"],
