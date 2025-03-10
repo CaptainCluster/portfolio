@@ -14,6 +14,32 @@ import ProjectsInterface from "../models/interfaces/ProjectsInterface";
 
 export const projectsData: ProjectsInterface[] = [
   {
+    "name":           "Titeenit (2025) website",
+    "images":         [
+      {
+        "src":  "project_titeenit_website.png",
+        "alt":  "Titeenit (2025) website image"
+      }
+    ],
+    "technologies":   ["TypeScript", "React", "TailwindCSS", "pnpm"],
+    "status":         "Finished",
+    "year":           2025,
+    "description":    [
+      `
+        This website was made to share basic information regarding the 
+        Titeenit (2025) website. Titeenit is a student event for 
+        software engineering students from all across Finland.
+      `
+    ],
+    "links":          [
+      {
+        "url":      "https://titeen.it/",
+        "shortUrl": "Titeenit website",
+        "alt":      "Link to Titeenit website"
+      }
+    ]
+  },
+  {
     "name":           "Reach/Figma Hackathon, 2025",
     "images":         [
       {
